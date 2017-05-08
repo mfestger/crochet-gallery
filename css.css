@@ -1,0 +1,144 @@
+body {
+    background-image: url("img/crochet-background.jpg");
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    background-size: cover;
+
+}
+
+#main-title {
+    font-family: 'Pacifico', cursive;
+}
+
+#main-title1 {
+    margin-top: 1px;
+}
+
+.main-logo {
+    height: 100px;
+    font-family: 'Pacifico', cursive;
+    background-color: antiquewhite;
+}
+
+.nav {
+    font-family: 'Pacifico', cursive;
+    background-color: antiquewhite;
+}
+
+.navbar-default {
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+#main-body-container {
+    /*width: 868px;*/
+    height: 1000px;
+    width: 80%;
+    /*height: 100%;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    opacity: .85;
+}
+
+#something {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.main-images {
+    height: 20%;
+    width: 20%;
+    margin: 5%;
+    float: left;
+    margin-left: 8%;
+    border-radius: 10%;
+}
+
+#logo {
+    opacity: 1;
+    height: 18%;
+    width: 25%;
+    margin: 3%;
+}
+
+#welcome {
+    font-size: 175%;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+#welcome-content {
+    font-size: 130%;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
+}
+
+#category-container {
+    height: 400px;
+    width: 100%;
+
+}
+
+.category-home {
+    /*height: 100%;*/
+    width: 100%;
+    border-radius: 23%;
+    text-align: center;
+    padding: 10%;
+    margin: auto;
+}
+
+.element-container {
+    float: left;
+    height: 78%;
+    width: 37%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 10%
+}
+
+.category-text {
+    text-align: center;
+    float: left;
+    width: 106%;
+}
+
+@media (max-width: 400px){
+    #main-body-container {
+        /*width: 868px;*/
+        height: 100%;
+        width: 80%;
+        /*height: 100%;*/
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        opacity: .85;
+    }
+
+    #something {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+    }
+
+    .main-images {
+        height: 30%;
+        width: 80%;
+        margin: 5%;
+        float: left;
+        margin-left: 8%;
+        border-radius: 10%;
+        opacity: 2;
+    }
+
+}
+
+
+
