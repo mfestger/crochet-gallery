@@ -48,12 +48,10 @@ body, html {
     text-align: center;
     font-family: 'Pacifico', cursive;
     color: #36497d;
-
 }
 
 #logo {
     height: 100%;
-    /*width: 20%;*/
     float: left;
     text-wrap: normal;
 }
@@ -68,101 +66,33 @@ body, html {
 }
 
 #container-for-categories {
-    margin-top: 7%;
+    margin-top: 5%;
     height: 100%;
     width: 100%;
-    border: solid;
-
 }
 
 .category {
-    height: 50%;
-    width: 50%;
-    border: solid;
+    height: 100%;
+    width: 100%;
     float: left;
-
 }
 
 .category-styling {
     height: 100%;
     width: 100%;
-    border: solid;
+    padding: 5%;
+    border-radius: 40%;
+    text-align: center;
+
 }
 
+.category-text {
+text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #36497d;
+    height: 120%;
+}
 
-
-
-
-
-
-/*#category-container {*/
-    /*height: 400px;*/
-    /*width: 100%;*/
-
-/*}*/
-
-/*.category-home {*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-    /*border-radius: 23%;*/
-    /*text-align: center;*/
-    /*padding: 10%;*/
-    /*margin: auto;*/
-/*}*/
-
-/*.element-container {*/
-    /*float: left;*/
-    /*height: 78%;*/
-    /*width: 37%;*/
-    /*text-align: center;*/
-    /*margin-right: auto;*/
-    /*margin-left: 10%*/
-/*}*/
-
-/*.category-text {*/
-    /*text-align: center;*/
-    /*float: left;*/
-    /*width: 106%;*/
-/*}*/
-
-/*.blankets-class {*/
-    /*width: 50%;*/
-
-/*}*/
-
-/*@media (max-width: 400px){*/
-    /*#main-body-container {*/
-        /*!*width: 868px;*!*/
-        /*height: 100%;*/
-        /*width: 80%;*/
-        /*!*height: 100%;*!*/
-        /*margin-right: auto;*/
-        /*margin-left: auto;*/
-        /*margin-top: 7%;*/
-        /*margin-bottom: 7%;*/
-        /*opacity: .85;*/
-    /*}*/
-
-    /*#something {*/
-        /*background-color: antiquewhite;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*border-radius: 10%;*/
-    /*}*/
-
-    /*.main-images {*/
-        /*height: 30%;*/
-        /*width: 80%;*/
-        /*margin: 5%;*/
-        /*float: left;*/
-        /*margin-left: 8%;*/
-        /*border-radius: 10%;*/
-        /*opacity: 2;*/
-    /*}*/
-
-
-
-/*}*/
 
 
 
