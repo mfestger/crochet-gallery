@@ -41,33 +41,17 @@
     </div>
 </nav>
 
+<div id="container" class="row">
+    <div id="title-container" class="col-sm-6">
 
-<div id="main-body-container">
-    <div id="something">
+        <div id="welcome-to-crocheted-designs">Welcome to Crocheted Designs by Stacy</div>
         <img id="logo" src="img/logo.png">
-        <span id="welcome"> Welcome to Crochet Designs by Stacy! </span>
-        <div id="welcome-content">
-            Feel free to browse my portfolio and <a href="">Contact Me</a> if you would are interested in anything you
-            see here!
+        <hr>
+        <div id="please-feel-free">Please feel free to browse my gallery and <a href="">Contact Me</a> if you are
+            interested in commissioning something lovely for your friends or family.
         </div>
-        <br><br>
-        <div id="category-container">
-            <div id="blankets-throws" class="element-container">
-                <div class="category-text">Blankets & Throws</div>
-                <img class="category-home" src="img/blanket3.JPG">
-            </div>
-            <div id="apparel-accessories" class="element-container">
-                <div class="category-text">Apparel & Accessories</div>
-                <img class="category-home" src="img/outfit1.JPG">
-            </div>
-            <div id="home-accents" class="element-container">
-                <div class="category-text">Home Accents</div>
-                <img class="category-home" src="img/coaster4.JPG">
-            </div>
-            <div id="misc" class="element-container">
-                <div class="category-text">Misc.</div>
-                <img class="category-home" src="img/blanket3.JPG">
-            </div>
+        <div id="container-for-categories" class="col-sm-12">
+            <img class="category-styling col-sm-3" src="img/blanket1.jpg">
         </div>
     </div>
 
@@ -83,36 +67,7 @@
 "use strict";
 $(document).ready(function() {
 
-    $('#blankets-throws').click(function () {
-        $('#logo').fadeOut(1400);
-        $('#welcome').fadeOut(1400);
-        $('#welcome-content').fadeOut(1400);
-        $('#apparel-accessories').fadeOut(1400);
-        $('#home-accents').fadeOut(1400);
-        $('#misc').fadeOut(1400);
-
-
-    });
-
-
-
-
-
-
-
-
-
-
-    window.sr = ScrollReveal({ duration: 3000 });
-    sr.reveal('#main-body-container', 50);
-
 });
-
-
-
-
-
-
 </script>
 </body>
 </html>
