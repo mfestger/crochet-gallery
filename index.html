@@ -35,7 +35,7 @@
                 <li id ="blanketsTopLink" class = "linksAtTop"><a href="#">Blankets & Throws</a></li>
                 <li id ="apparelTopLink"  class = "linksAtTop"><a href="#">Apparel & Accessories</a></li>
                 <li id ="homeAccentsTopLink"  class = "linksAtTop"><a href="#">Home Accents</a></li>
-                <li id ="MiscTopLink"  class = "linksAtTop"><a href="#">Misc.</a></li>
+                <li id ="miscTopLink"  class = "linksAtTop"><a href="#">Misc.</a></li>
             </ul>
         </div>
     </div>
@@ -182,11 +182,16 @@
             <img class="category-styling col-sm-12" src="img/rug1.jpg">
         </div>
 
+        <div class = "col-sm-3 aboutMe Display displayProp ">
+            <img id="about-me-pic" src="img/about-me-pic.jpg">
+        </div>
+
     </div>
+
     <div id="blanketsBottomLink" class="linksAtBottom col-sm-3"> Blankets & Throws</div>
     <div id="apparelBottomLink" class="linksAtBottom col-sm-3"> Apparel & Accessories</div>
     <div id="homeAccentsBottomLink" class="linksAtBottom col-sm-3"> Home Accents</div>
-    <div id="miscBottomLink" class="linksAtBottom col-sm-3"> Misc. </div>
+    <div id="miscBottomLink" class="linksAtBottom col-sm-3"> Misc.</div>
 </div>
 
 
@@ -201,44 +206,74 @@ $(document).ready(function() {
     $('.displayProp').hide();
     $('.category-title').hide();
 
-    $('.blanketsThrowsCat, #blanketsTopLink, #blanketsBottomLink').click(function () {
+    function catFade(){
         $('.apparelAccessoriesCat').fadeOut(1200);
         $('.homeAccentsCat').fadeOut(1200);
         $('.miscCat').fadeOut(1200);
         $('.blanketsThrowsCat').fadeOut(1200);
+    }
+
+
+    $('.blanketsThrowsCat, #blanketsTopLink, #blanketsBottomLink').click(function () {
+        catFade();
         $('.apparelDisplay').fadeOut(1200);
-        $('#apparel-title').fadeOut(1200);
         $('.homeAccentsDisplay').fadeOut(1200);
-        $('#homeAccents-title').fadeOut(1200);
-        $('.blanketsDisplay').delay(900).fadeIn(2400);
+        $('.miscDisplay').fadeOut(1200);
+
+        $('#homeAccents-title').fadeOut(1000);
+        $('#apparel-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+
         $('#blankets-title').delay(900).fadeIn(1500);
+        $('.blanketsDisplay').delay(900).fadeIn(2400);
     });
 
     $('.apparelAccessoriesCat, #apparelTopLink, #apparelBottomLink').click(function () {
-        $('.blanketsThrowsCat').fadeOut(1200);
-        $('.apparelAccessoriesCat').fadeOut(1200);
-        $('.homeAccentsCat').fadeOut(1200);
-        $('.miscCat').fadeOut(1200);
-        $('.blanketsDisplay').fadeOut(1200);
+        catFade();
+
         $('.homeAccentsDisplay').fadeOut(1200);
-        $('#homeAccents-title').fadeOut(1200);
-        $('#blankets-title').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.miscDisplay').fadeOut(1200);
+
+        $('#homeAccents-title').fadeOut(1000);
+        $('#blankets-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+
         $('.apparelDisplay').delay(900).fadeIn(2400);
         $('#apparel-title').delay(900).fadeIn(1500);
     });
 
     $('.homeAccentsCat, #homeAccentsTopLink, #homeAccentsBottomLink').click(function () {
-        $('.apparelAccessoriesCat').fadeOut(1200);
-        $('.homeAccentsCat').fadeOut(1200);
-        $('.miscCat').fadeOut(1200);
-        $('.blanketsThrowsCat').fadeOut(1200);
+        catFade();
+
+        $('#blankets-title').fadeOut(1000);
+        $('#apparel-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+
         $('.apparelDisplay').fadeOut(1200);
-        $('#apparel-title').fadeOut(1200);
         $('.blanketsDisplay').fadeOut(1200);
-        $('#blankets-title').fadeOut(1200);
+        $('.miscDisplay').fadeOut(1200);
+
         $('.homeAccentsDisplay').delay(900).fadeIn(2400);
         $('#homeAccents-title').delay(900).fadeIn(1500);
     });
+
+    $('.miscCat, #miscTopLink, #miscBottomLink').click(function () {
+        catFade();
+
+        $('#apparel-title').fadeOut(1000);
+        $('#blankets-title').fadeOut(1000);
+        $('#homeAccents-title').fadeOut(1000);
+
+        $('.apparelDisplay').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.homeAccentsDisplay').fadeOut(1200);
+
+        $('.miscDisplay').delay(900).fadeIn(2400);
+        $('#misc-title').delay(900).fadeIn(1500);
+    });
+
+
 
     window.sr = ScrollReveal({ duration: 3000 });
     sr.reveal('#container', 50);

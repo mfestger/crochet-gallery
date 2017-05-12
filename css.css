@@ -34,10 +34,10 @@ body, html {
 
 #container {
     width: 80%;
-    /*height: 100%;*/
+
     margin: 0 auto;
     background-color: antiquewhite;
-    border-radius: 10%;
+    border-radius: 67px;
     opacity: .8;
 }
 
@@ -51,7 +51,7 @@ body, html {
 }
 
 #logo {
-    height: 100%;
+
     float: left;
     text-wrap: normal;
 }
@@ -90,8 +90,9 @@ body, html {
     height: 100%;
     width: 100%;
     padding: 5%;
-    border-radius: 40%;
+    border-radius: 20%;
     text-align: center;
+    opacity: 1.0;
 
 }
 
