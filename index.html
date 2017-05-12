@@ -213,75 +213,106 @@ $(document).ready(function() {
         $('.blanketsThrowsCat').fadeOut(1200);
     }
 
-
-    $('.blanketsThrowsCat, #blanketsTopLink, #blanketsBottomLink').click(function () {
-        catFade();
+    function blanketsDisplay(){
         $('.apparelDisplay').fadeOut(1200);
         $('.homeAccentsDisplay').fadeOut(1200);
         $('.miscDisplay').fadeOut(1200);
+    }
 
+    function blanketsTitle(){
         $('#homeAccents-title').fadeOut(1000);
         $('#apparel-title').fadeOut(1000);
         $('#misc-title').fadeOut(1000);
+    }
 
+    function blanketsIn() {
         $('#blankets-title').delay(900).fadeIn(1500);
         $('.blanketsDisplay').delay(900).fadeIn(2400);
+    }
+
+
+    function apparelDisplay() {
+        $('.homeAccentsDisplay').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.miscDisplay').fadeOut(1200);
+
+    }
+
+    function apparelTitle(){
+        $('#homeAccents-title').fadeOut(1000);
+        $('#blankets-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+    }
+
+    function apparelIn(){
+        $('.apparelDisplay').delay(900).fadeIn(2400);
+        $('#apparel-title').delay(900).fadeIn(1500);
+    }
+
+    function homeAccentTitle(){
+        $('#blankets-title').fadeOut(1000);
+        $('#apparel-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+    }
+
+    function homeAccentDisplay(){
+        $('.apparelDisplay').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.miscDisplay').fadeOut(1200);
+    }
+
+    function homeAccentIn(){
+        $('.homeAccentsDisplay').delay(900).fadeIn(2400);
+        $('#homeAccents-title').delay(900).fadeIn(1500);
+    }
+
+    function miscTitle(){
+        $('#apparel-title').fadeOut(1000);
+        $('#blankets-title').fadeOut(1000);
+        $('#homeAccents-title').fadeOut(1000);
+    }
+
+    function miscDisplay(){
+        $('.apparelDisplay').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.homeAccentsDisplay').fadeOut(1200);
+    }
+
+    function miscIn(){
+        $('.miscDisplay').delay(900).fadeIn(2400);
+        $('#misc-title').delay(900).fadeIn(1500);
+    }
+
+    $('.blanketsThrowsCat, #blanketsTopLink, #blanketsBottomLink').click(function () {
+        catFade();
+        blanketsDisplay();
+        blanketsTitle();
+        blanketsIn()
     });
 
     $('.apparelAccessoriesCat, #apparelTopLink, #apparelBottomLink').click(function () {
         catFade();
-
-        $('.homeAccentsDisplay').fadeOut(1200);
-        $('.blanketsDisplay').fadeOut(1200);
-        $('.miscDisplay').fadeOut(1200);
-
-        $('#homeAccents-title').fadeOut(1000);
-        $('#blankets-title').fadeOut(1000);
-        $('#misc-title').fadeOut(1000);
-
-        $('.apparelDisplay').delay(900).fadeIn(2400);
-        $('#apparel-title').delay(900).fadeIn(1500);
+        apparelDisplay();
+        apparelTitle();
+        apparelIn()
     });
 
     $('.homeAccentsCat, #homeAccentsTopLink, #homeAccentsBottomLink').click(function () {
         catFade();
-
-        $('#blankets-title').fadeOut(1000);
-        $('#apparel-title').fadeOut(1000);
-        $('#misc-title').fadeOut(1000);
-
-        $('.apparelDisplay').fadeOut(1200);
-        $('.blanketsDisplay').fadeOut(1200);
-        $('.miscDisplay').fadeOut(1200);
-
-        $('.homeAccentsDisplay').delay(900).fadeIn(2400);
-        $('#homeAccents-title').delay(900).fadeIn(1500);
+        homeAccentDisplay();
+        homeAccentTitle();
+        homeAccentIn()
     });
 
     $('.miscCat, #miscTopLink, #miscBottomLink').click(function () {
         catFade();
-
-        $('#apparel-title').fadeOut(1000);
-        $('#blankets-title').fadeOut(1000);
-        $('#homeAccents-title').fadeOut(1000);
-
-        $('.apparelDisplay').fadeOut(1200);
-        $('.blanketsDisplay').fadeOut(1200);
-        $('.homeAccentsDisplay').fadeOut(1200);
-
-        $('.miscDisplay').delay(900).fadeIn(2400);
-        $('#misc-title').delay(900).fadeIn(1500);
+        miscDisplay();
+        miscTitle();
+        miscIn();
     });
-
-
 
     window.sr = ScrollReveal({ duration: 3000 });
     sr.reveal('#container', 50);
-
-
-
-
-
 });
 
 </script>
