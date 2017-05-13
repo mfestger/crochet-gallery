@@ -66,22 +66,22 @@
 
     <div id="container-for-categories" class="col-sm-12">
 
-        <div class="col-sm-6 blanketsThrowsCat">
+        <div class="col-sm-6 blanketsThrowsCat category">
             <div class="category-text col-sm-12">Blankets & Throws</div>
             <img class="category-styling col-sm-12" src="img/blanket1.jpg">
         </div>
 
-        <div class="apparelAccessoriesCat col-sm-6">
+        <div class="apparelAccessoriesCat col-sm-6 category">
             <div class="category-text col-sm-12">Apparel & Accessories</div>
             <img class="category-styling col-sm-12" src="img/jacket1.JPG">
         </div>
 
-        <div class="homeAccentsCat col-sm-6">
+        <div class="homeAccentsCat col-sm-6 category">
             <div class="category-text col-sm-12">Home Accents</div>
             <img class="category-styling col-sm-12" src="img/placemat2.JPG">
         </div>
 
-        <div class="miscCat col-sm-6">
+        <div class="miscCat col-sm-6 category">
             <div class="category-text col-sm-12">Misc.</div>
             <img class="category-styling col-sm-12" src="img/coaster4.JPG">
         </div>
@@ -310,6 +310,8 @@ $(document).ready(function() {
         miscTitle();
         miscIn();
     });
+
+    $('.linksAtBottom, .category').css('cursor', 'pointer');
 
     window.sr = ScrollReveal({ duration: 3000 });
     sr.reveal('#container', 50);

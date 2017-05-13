@@ -79,13 +79,6 @@ body, html {
     width: 100%;
 }
 
-.category {
-    height: 100%;
-    width: 100%;
-    float: left;
-    cursor: hand;
-}
-
 .category-styling {
     height: 100%;
     width: 100%;
