@@ -8,7 +8,7 @@
     <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <title>Crochet Designs | Stacy Festger</title>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">    <title>Crochet Designs | Stacy Festger</title>
 </head>
 <body>
 <nav class="navbar navbar-static-top">
@@ -26,7 +26,7 @@
         </div>
         <div class="navbar navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li><a href="#">About Me</a></li>
+                <li id="aboutMeTopLink"><a href="#">About Me</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -62,6 +62,9 @@
     </div>
     <div id="misc-title" class="category-title col-sm-12">
         Misc.
+    </div>
+    <div id="aboutMe-title" class="category-title col-sm-12">
+        About Me
     </div>
 
     <div id="container-for-categories" class="col-sm-12">
@@ -182,12 +185,22 @@
             <img class="category-styling col-sm-12" src="img/rug1.JPG">
         </div>
 
-        <div class = "col-sm-3 aboutMe Display displayProp ">
+
+        <!--About Me Section: Start-->
+        <div class = "col-sm-6 aboutMeDisplay displayProp ">
             <img id="about-me-pic" src="img/about-me-pic.jpg">
         </div>
+        <div id="aboutMeText" class="displayProp aboutMeDisplay col-sm-6">
+            My name is <span id="momsName">Stacy Festger,</span> and I have been crocheting for 20 years.
+            I am always crocheting, be it for friends, family, clients, or even for fun.
+            I make custom designs and pull designs from the web to better my craft.
+            Feel free to contact me if you are interested in having something made
+            for you or if you are interested in crocheting advice or suggestions!
+        </div>
+
+        <!--About Me Section: End-->
 
     </div>
-
     <div id="blanketsBottomLink" class="linksAtBottom col-sm-3"> Blankets & Throws</div>
     <div id="apparelBottomLink" class="linksAtBottom col-sm-3"> Apparel & Accessories</div>
     <div id="homeAccentsBottomLink" class="linksAtBottom col-sm-3"> Home Accents</div>
@@ -211,6 +224,8 @@ $(document).ready(function() {
         $('.homeAccentsCat').fadeOut(1200);
         $('.miscCat').fadeOut(1200);
         $('.blanketsThrowsCat').fadeOut(1200);
+        $('#about-me-pic').fadeOut(1000);
+        $('.aboutMeDisplay').fadeOut(1000);
     }
 
     function blanketsDisplay(){
@@ -283,11 +298,29 @@ $(document).ready(function() {
         $('#misc-title').delay(900).fadeIn(1500);
     }
 
+    function aboutMeIn(){
+        $('#about-me-pic').fadeIn(2400);
+        $('.aboutMeDisplay').fadeIn(2400);
+    }
+
+    function aboutMeTitle(){
+        $('#blankets-title').fadeOut(1000);
+        $('#apparel-title').fadeOut(1000);
+        $('#homeAccents-title').fadeOut(1000);
+        $('#misc-title').fadeOut(1000);
+    }
+
+    function aboutMeDisplay(){
+        $('.apparelDisplay').fadeOut(1200);
+        $('.blanketsDisplay').fadeOut(1200);
+        $('.homeAccentsDisplay').fadeOut(1200);
+    }
+
     $('.blanketsThrowsCat, #blanketsTopLink, #blanketsBottomLink').click(function () {
         catFade();
         blanketsDisplay();
         blanketsTitle();
-        blanketsIn()
+        blanketsIn();
     });
 
     $('.apparelAccessoriesCat, #apparelTopLink, #apparelBottomLink').click(function () {
@@ -309,6 +342,14 @@ $(document).ready(function() {
         miscDisplay();
         miscTitle();
         miscIn();
+    });
+
+    $('#aboutMeTopLink').click(function () {
+        catFade();
+        aboutMeDisplay();
+        aboutMeTitle();
+        aboutMeIn();
+
     });
 
     $('.linksAtBottom, .category').css('cursor', 'pointer');

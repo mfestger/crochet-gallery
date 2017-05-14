@@ -38,7 +38,7 @@ body, html {
     margin: 0 auto;
     background-color: antiquewhite;
     border-radius: 67px;
-    opacity: .8;
+
 }
 
 #title-container {
@@ -85,7 +85,7 @@ body, html {
     padding: 5%;
     border-radius: 20%;
     text-align: center;
-    opacity: 1.0;
+    opacity: .8;
 
 }
 
@@ -105,5 +105,22 @@ text-align: center;
     cursor: hand;
 }
 
+#about-me-pic {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    text-wrap: normal;
+    
+}
 
+#aboutMeText {
+    font-family: 'Sacramento', cursive;
+    font-size: 280%;
+}
+
+#momsName {
+    font-weight: bold;
+    font-size: 110%;
+}
 
